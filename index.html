@@ -2,69 +2,89 @@
 <html>
     <head>
     <title> Selma's tech website</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/baa2c967f0.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/baa2c967f0.js"></script> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="styles/styles/layout.css" rel="stylesheet" type="text/css" media="all">
     
 </head>
-<body>
-
-   <!--Navbar -->
-
-<nav class="navbar bg-dark navbar-dark navbar-expand-md">
-    <a class="navbar-brand" href="https://datagirlcmr.github.io/">
-      <img src="images/datagirl.jpg" height="50" alt="mdb logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Welcome
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Who is DataGirl</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">What I Do</a>
-        </li>
-        <li class="nav-item dropdown"> 
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown">Portfolio
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Websites</a>
-            <a class="dropdown-item" href="#">Trainings</a>
-            <a class="dropdown-item" href="#">Gallery</a>
-          </div>
-        </li>
-      </ul>
-      <ul class="navbar-nav ml-auto ">
-        <li class="nav-item">
-          <a class="nav-link ">
-            <i class="fab fa-github"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">
-            <i class="fab fa-slack"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-      </ul>
+<body id = "top">
+  <!--top bar-->
+  <div class = "wrapper row0">
+    <div id ="topbar"  class= "hoc clear">
+        <ul>
+            <li><i class="fa fa-clock-o"></i> Mon. - Fri. 8am - 5pm</li>
+            <li><i class="fa fa-phone"></i> +237 677 30 30 86</li>
+            <li><i class="fa fa-envelope-o"></i> datagirlcmr@gmail.com</li>
+          </ul>
     </div>
-  </nav>
-  <!--/.Navbar -->
+  </div> 
+
+  <!--logo header-->
+  <div class = "wrapper row1">
+    <header id="header" class="hoc clear">
+        <div id="logo" class="fl_left">
+          <a href="datagirlcmr.github.io">
+              <img src="images/datagirl.jpg" width="50px" height="50px"> 
+              </a>
+          </div>
+          <div class="fl_right"><a class="btn" href="#">Tech Enthusiast</a></div>
+    </header>
+  </div>
+
+  <!--Menu-->
+  <div class="bgded" style="background-image:url('images/me.jpg');" height="50px"> <!--image for menu-->
+    <div class= "wrapper row2">
+      <nav id="mainav" class="hoc clear">
+          <ul class="clear">
+              <li class="active"><a href="index.html">Welcome</a></li>
+              <li><a class="drop" href="#">Who is Datagirl</a>
+                <ul>
+                  <li><a href="pages/sidebar-left.html">About</a></li>
+                  <li><a href="pages/gallery.html">Gallery</a></li>
+                  <li><a href="pages/full-width.html">Contact</a></li>
+                </ul>
+              </li>
+                <li><a class="drop" href="#">Portfolio</a>
+                  <ul>
+                      <li><a href="#">Web Applications</a></li>
+                      <li><a href="#">Financial Software</a></li>
+                      <li><a href="#">E-commerce</a></li>
+                  </ul>
+                </li>
+              <li><a class="drop" href="#">Trainings</a>
+                <ul>
+                  <li><a href="#">Onsite</a></li>
+                  <li><a class="drop" href="#">Online</a>
+                    <ul>
+                      <li><a href="#">HTML & CSS</a></li>
+                      <li><a href="#">Javascript</a></li>
+                      <li><a href="#">Wordpress</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+      </nav>
+    </div>
+
+    <!--text in menu image-->
+    <div class="wrapper overlay">
+        <article id="pageintro" class="hoc clear"> 
+          <h3 class="heading">The DataGirl Brand</h3>
+          <p>An attempt to showcase my skills while making sure you know my story.</p>
+          <footer><a class="btn" href="#">Hire Me</a></footer>
+        </article>
+      </div>
+  </div>
+
+  <!--Main Body-->
+    
 
 
-
+    
+    <script src="styles/scripts/jquery.min.js"></script>
+    <script src="styles/scripts/jquery.backtotop.js"></script>
+    <script src="styles/scripts/jquery.mobilemenu.js"></script>
 
 
 </body>
